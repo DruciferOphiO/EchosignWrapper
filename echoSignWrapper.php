@@ -18,7 +18,7 @@
             $this->usdlUrl = 'https://secure.echosign.com/services/EchoSignDocumentService16?wsdl';
             $this->apiKey = $key;
             $this->password = $password;
-            $this->client = new SoapClient($url, array(ÔtraceÕ => TRUE));
+            $this->client = new SoapClient($this->usdlUrl, array(ÔtraceÕ => TRUE));
             return $this->client;
         }
         
